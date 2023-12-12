@@ -1,7 +1,7 @@
 #!/bin/bash
 
-fname=$1
-lname=$2
-flname=$((fname+lname))
+num1=$1
+num2=$2
+sum=$((fname+lname))
 
-echo "full name is:$flname"
+echo "full name is:$sum"
