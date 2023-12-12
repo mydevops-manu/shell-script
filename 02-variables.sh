@@ -2,6 +2,6 @@
 
 num1=$1
 num2=$2
-sum=$((fname+lname))
+sum=$((num1+num2))
 
 echo "sum is:$sum"
