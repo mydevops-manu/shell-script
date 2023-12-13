@@ -10,17 +10,17 @@ CHECK(){
 
     if [ $1 -ne 0 ]
     then
-        echo "ERROR:: $2 installation $R failed $N"
+        echo -e "ERROR:: $2 installation $R failed $N"
         exit 1
     else
-        echo "$G Successfully $N installed $2"
+        echo -e "$G Successfully $N installed $2"
         $2 --version
     fi
 }
 
 if [ $ID -ne 0 ]
 then
-    echo "$R ERROR $N:: Please run script with root access"
+    echo -e "$R ERROR $N:: Please run script with root access"
     exit 1
 else
     echo "Root access confirmed..."
