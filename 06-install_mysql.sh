@@ -17,6 +17,9 @@ yum install mysql -y
 if [ $? -eq 0 ]
 then
     echo "Successfully installed mysql"
+    mysql --version
 else
     echo "Mysql installation failed"
 fi
+
+
