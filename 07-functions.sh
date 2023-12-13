@@ -10,8 +10,8 @@ CHECK(){
         echo "ERROR:: $2 installation failed"
         exit 1
     else
-        echo "Successfully installed mysql"
-        $s --version
+        echo "Successfully installed $2"
+        $2 --version
     fi
 }
 
@@ -30,7 +30,7 @@ CHECK $? "mysql"
 
 yum install git -y
 
-CHECK $? "Git"
+CHECK $? "git"
 
 
 
