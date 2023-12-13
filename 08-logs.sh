@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "checking root access..." &>> $LOGFILE
+
 ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
@@ -22,6 +22,8 @@ CHECK(){
         $2 --version &>> $LOGFILE
     fi
 }
+
+echo "checking root access..." &>> $LOGFILE
 
 if [ $ID -ne 0 ]
 then
