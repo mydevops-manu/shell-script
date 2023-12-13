@@ -11,3 +11,12 @@ else
     echo "Root access confirmed..."
     echo "Installing Mysql..."
 fi
+
+yum install mysql -y
+
+if [ $? -eq 0 ]
+then
+    echo "Successfully installed mysql"
+else
+    echo "Mysql installation failed"
+fi
