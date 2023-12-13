@@ -22,4 +22,13 @@ else
     echo "Mysql installation failed"
 fi
 
+yum install git -y
+
+if [ $? -eq 0 ]
+then 
+    echo "Successfully installed git"
+else
+    echo "Git installation failed"
+fi
+
 
