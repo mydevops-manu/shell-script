@@ -19,7 +19,7 @@ CHECK(){
         exit 1
     else
         echo -e "$G Successfully $N installed $2" &>> $LOGFILE
-        $2 --version
+        $2 --version &>> $LOGFILE
     fi
 }
 
