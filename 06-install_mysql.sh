@@ -14,22 +14,24 @@ fi
 
 yum install mysql -y
 
-if [ $? -eq 0 ]
+if [ $? -ne 0 ]
 then
-    echo "Successfully installed mysql"
-    mysql --version
-else
     echo "Mysql installation failed"
+    exit 1
+else
+    echo "Successfully installed mysql"
+    mysql --version  
 fi
 
 yum install git -y
 
 if [ $? -eq 0 ]
-then 
-    echo "Successfully installed git"
-    git --version
-else
+then
     echo "Git installation failed"
+    exit 1   
+else
+    echo "Successfully installed git"
+    git --version  
 fi
 
 
