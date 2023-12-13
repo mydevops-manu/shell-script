@@ -2,10 +2,10 @@
 
 ID=$(id -u)
 
-if [ $ID -ne 0 ];
+if [ $ID -ne 0 ]
 then
-    echo "ERROR:: Please run with root access"
-    exit 1
+    echo "ERROR:: Please run script with root access"
+    
 else
     echo "Installing Mysql..."
 fi
