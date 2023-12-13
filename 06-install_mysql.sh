@@ -27,6 +27,7 @@ yum install git -y
 if [ $? -eq 0 ]
 then 
     echo "Successfully installed git"
+    git --version
 else
     echo "Git installation failed"
 fi
