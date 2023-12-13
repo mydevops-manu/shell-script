@@ -9,6 +9,8 @@ N="\e[0m"
 TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
+echo "script stared at $TIMESTAMP" &>> $LOGFILE
+
 CHECK(){
 
     if [ $1 -ne 0 ]
