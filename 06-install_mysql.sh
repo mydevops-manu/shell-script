@@ -8,3 +8,4 @@ then
     exit 1
 else
     echo "Installing Mysql..."
+fi
