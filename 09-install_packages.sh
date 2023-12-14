@@ -47,7 +47,8 @@ do
         yum install $package -y &>> $LOGFILE # install the package
         CHECK $? "$package" # checking
     else
-        echo "$package already installed $Y SKIPPING $N" &>> $LOGFILE       
+        echo "$package already installed $Y SKIPPING $N" &>> $LOGFILE
+    fi       
 done
 
 
