@@ -11,6 +11,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo "script stared at $TIMESTAMP" &>> $LOGFILE
+echo "script stared at $TIMESTAMP" # display on terminal
 
 CHECK(){
 
@@ -50,6 +51,7 @@ do
         echo "$package already installed $Y SKIPPING $N" &>> $LOGFILE
     fi       
 done
+echo "script ended at $TIMESTAMP" # display on terminal
 
 
 
