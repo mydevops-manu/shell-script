@@ -42,6 +42,7 @@ fi
 
 for package in $@
 do
+    echo "inside for loop"
     yum list installed $package &>> $LOGFILE # checking installed or not
     if [ $? -ne 0 ]     # if not installed
     then
