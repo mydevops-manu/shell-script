@@ -34,6 +34,7 @@ then
 else
     echo "Root access confirmed..." &>> $LOGFILE
     echo "Installing Mysql..." &>> $LOGFILE
+    echo "Installing Mysql..."
 fi
 
 # echo "All arguments passed: $@"
