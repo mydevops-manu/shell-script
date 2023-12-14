@@ -34,7 +34,6 @@ then
 else
     echo "Root access confirmed..." &>> $LOGFILE
     echo "Installing Mysql..." &>> $LOGFILE
-    echo "Installing Mysql..."
 fi
 
 # echo "All arguments passed: $@"
@@ -43,7 +42,7 @@ fi
 
 for package in $@
 do
-    yum installed $package &>> $LOGFILE # checking installed or not
+    yum list installed $package &>> $LOGFILE # checking installed or not
     if [ $? -ne 0 ]     # if not installed
     then
         yum install $package -y &>> $LOGFILE # install the package
