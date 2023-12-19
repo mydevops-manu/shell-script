@@ -13,6 +13,7 @@ then
 fi
 
 FILES_TO_DELETE=$(find $LOG_DIR -type f -mtime +14 -name "*.log")
+$FILES_TO_DELETE
 
 while IFS= read -r line
 do
