@@ -11,7 +11,7 @@ do
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then
         MESSAGE+="High Disk usage on $PARTITION : $USAGE <br>"
-done <<< $DISK_USAGE
+    done <<< $DISK_USAGE
 
 echo -e "Message : $MESSAGE"
 
