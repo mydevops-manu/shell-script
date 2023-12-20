@@ -29,5 +29,5 @@ do
     esac
 done
 
-echo "$GREETINGS,$NAME". So happy to see you."
+echo "$NAME,$GREETINGS". So happy to see you."
 
