@@ -24,9 +24,9 @@ done
 
 if [ -z "$NAME" ];
 then
-    echo "-n is mandatory"
+    echo "ERROR :: -n is mandatory"
     USAGE   
-        exit 1
+    exit 1
 fi
 
 echo "$NAME,$GREETINGS". So happy to see you."
