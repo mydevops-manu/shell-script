@@ -15,7 +15,7 @@ while getopts "n:g:h" opt;
 do
     case $opt in
         n) NAME="$OPTARG";;
-        g) GREETINGs="$OPTARG";;
+        g) GREETINGS="$OPTARG";;
         h) USAGE; exit;;    
         :) USAGE; exit;;    
         \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;;
