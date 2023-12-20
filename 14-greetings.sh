@@ -11,13 +11,6 @@ USAGE(){
     echo "-h :: Display help and exit"
 }
 
-if [ -z "$NAME" ];
-then
-    echo "-n is mandatory"
-    USAGE   
-        exit 1
-fi
-
 while getopts "n:g:h" opt;
 do
     case $opt in
@@ -28,6 +21,13 @@ do
         \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;;
     esac
 done
+
+if [ -z "$NAME" ];
+then
+    echo "-n is mandatory"
+    USAGE   
+        exit 1
+fi
 
 echo "$NAME,$GREETINGS". So happy to see you."
 
