@@ -18,4 +18,6 @@ echo -e "Message : $MESSAGE"
 
 #echo "$MESSAGE" | mail -s "High Disk usage alert" mistermanojkumar21@gmail.com
 
+#Below command execute mail.sh where mail is formatted to look eye-catchy
+#I we dont want any formatting then comment the below line and uncomnet above line
 sh mail.sh "DevOps Team" "High Disk Usage" "$MESSAGE" "mistermanojkumar21@gmail.com" "ALERT High Disk Usage"
