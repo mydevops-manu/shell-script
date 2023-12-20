@@ -24,7 +24,7 @@ do
         n) NAME="$OPTARG";;
         g) GREETING="$OPTARG";;
         h) USAGE; exit;;    
-        :) USAGE; exit;;    # :) means no option 
+        :) USAGE; exit;;    
         \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;;
     esac
 done
