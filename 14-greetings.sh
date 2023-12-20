@@ -29,4 +29,4 @@ then
     exit 1
 fi
 
-echo "$NAME,$GREETINGS. So happy to see you."
+echo " Hello $NAME,$GREETINGS. So happy to see you."
