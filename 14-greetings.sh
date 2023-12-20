@@ -30,4 +30,3 @@ then
 fi
 
 echo "$NAME,$GREETINGS". So happy to see you."
-
